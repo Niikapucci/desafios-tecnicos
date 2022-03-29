@@ -1,0 +1,863 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.1 (Python 3.10.2 on win32)" generated="20220329 13:39:43.127" rpa="false" schemaversion="2">
+<suite id="s1" name="Sikuli" source="C:\SikuliCalc\sikuli.robot">
+<test id="s1-t1" name="Cenário 01 [Soma]">
+<kw name="Dado que eu abro a calculadora" library="sikuli">
+<kw name="Start Sikuli Process" library="SikuliLibrary">
+<msg timestamp="20220329 13:39:43.186" level="INFO">Starting process:
+java -jar C:\Users\Tiago\AppData\Local\Programs\Python\Python310\lib\site-packages\SikuliLibrary\lib\SikuliLibrary.jar 58731 C:\SikuliCalc</msg>
+<msg timestamp="20220329 13:39:43.252" level="INFO">Start sikuli java process on port 58731</msg>
+<msg timestamp="20220329 13:39:44.335" level="INFO">Sikuli java process is started</msg>
+<status status="PASS" starttime="20220329 13:39:43.180" endtime="20220329 13:39:45.883"/>
+</kw>
+<kw name="Add Image Path" library="SikuliLibrary">
+<arg>C:/SikuliCalc/IMG</arg>
+<doc>Add image path</doc>
+<status status="PASS" starttime="20220329 13:39:45.883" endtime="20220329 13:39:45.897"/>
+</kw>
+<kw name="Open Application" library="SikuliLibrary">
+<arg>${PATH}/Calculadora.bat</arg>
+<doc>Open application
+ To open app with parameters, refer:
+ https://sikulix-2014.readthedocs.io/en/latest/appclass.html#App.App</doc>
+<status status="PASS" starttime="20220329 13:39:45.898" endtime="20220329 13:39:47.237"/>
+</kw>
+<status status="PASS" starttime="20220329 13:39:43.179" endtime="20220329 13:39:47.238"/>
+</kw>
+<kw name="Quando eu somo &quot;5&quot; com &quot;5&quot;" library="sikuli">
+<kw name="Click" library="SikuliLibrary">
+<arg>Number5</arg>
+<doc>Click</doc>
+<msg timestamp="20220329 13:39:48.543" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1648571987756.png'/&gt;
+[log] CLICK on L[615,629]@S(0) (573 msec)</msg>
+<status status="PASS" starttime="20220329 13:39:47.241" endtime="20220329 13:39:48.543"/>
+</kw>
+<kw name="Click" library="SikuliLibrary">
+<arg>Plus</arg>
+<doc>Click</doc>
+<msg timestamp="20220329 13:39:49.612" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1648571988802.png'/&gt;
+[log] CLICK on L[773,696]@S(0) (562 msec)</msg>
+<status status="PASS" starttime="20220329 13:39:48.543" endtime="20220329 13:39:49.612"/>
+</kw>
+<kw name="Click" library="SikuliLibrary">
+<arg>Number5</arg>
+<doc>Click</doc>
+<msg timestamp="20220329 13:39:50.608" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1648571989861.png'/&gt;
+[log] CLICK on L[615,629]@S(0) (551 msec)</msg>
+<status status="PASS" starttime="20220329 13:39:49.612" endtime="20220329 13:39:50.608"/>
+</kw>
+<kw name="Click" library="SikuliLibrary">
+<arg>Equals</arg>
+<doc>Click</doc>
+<msg timestamp="20220329 13:39:51.671" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1648571990874.png'/&gt;
+[log] CLICK on L[773,765]@S(0) (560 msec)</msg>
+<status status="PASS" starttime="20220329 13:39:50.608" endtime="20220329 13:39:51.671"/>
+</kw>
+<status status="PASS" starttime="20220329 13:39:47.239" endtime="20220329 13:39:51.671"/>
+</kw>
+<kw name="Então eu tenho &quot;10&quot; como resultado" library="sikuli">
+<kw name="Wait For Image" library="SikuliLibrary">
+<arg>Assert_A</arg>
+<arg>Assert_B</arg>
+<arg>10</arg>
+<doc>Wait For Image</doc>
+<status status="PASS" starttime="20220329 13:39:51.672" endtime="20220329 13:39:52.118"/>
+</kw>
+<status status="PASS" starttime="20220329 13:39:51.672" endtime="20220329 13:39:52.118"/>
+</kw>
+<kw name="Fechar aplicação" library="sikuli" type="TEARDOWN">
+<kw name="Open Application" library="SikuliLibrary">
+<arg>${PATH}/Close.bat</arg>
+<doc>Open application
+ To open app with parameters, refer:
+ https://sikulix-2014.readthedocs.io/en/latest/appclass.html#App.App</doc>
+<status status="PASS" starttime="20220329 13:39:52.119" endtime="20220329 13:39:53.248"/>
+</kw>
+<kw name="Stop Remote Server" library="SikuliLibrary">
+<doc>Stops the remote server.</doc>
+<msg timestamp="20220329 13:39:53.252" level="INFO">Robot Framework remote server stopping</msg>
+<status status="PASS" starttime="20220329 13:39:53.249" endtime="20220329 13:39:53.252"/>
+</kw>
+<status status="PASS" starttime="20220329 13:39:52.119" endtime="20220329 13:39:53.252"/>
+</kw>
+<status status="PASS" starttime="20220329 13:39:43.179" endtime="20220329 13:39:53.253"/>
+</test>
+<test id="s1-t2" name="Cenário 02 [Subtração]">
+<kw name="Dado que eu abro a calculadora" library="sikuli">
+<kw name="Start Sikuli Process" library="SikuliLibrary">
+<msg timestamp="20220329 13:39:53.257" level="INFO">Starting process:
+java -jar C:\Users\Tiago\AppData\Local\Programs\Python\Python310\lib\site-packages\SikuliLibrary\lib\SikuliLibrary.jar 58761 C:\SikuliCalc</msg>
+<msg timestamp="20220329 13:39:53.328" level="INFO">Start sikuli java process on port 58761</msg>
+<msg timestamp="20220329 13:39:54.396" level="INFO">Sikuli java process is started</msg>
+<status status="PASS" starttime="20220329 13:39:53.255" endtime="20220329 13:39:55.848"/>
+</kw>
+<kw name="Add Image Path" library="SikuliLibrary">
+<arg>C:/SikuliCalc/IMG</arg>
+<doc>Add image path</doc>
+<status status="PASS" starttime="20220329 13:39:55.848" endtime="20220329 13:39:55.861"/>
+</kw>
+<kw name="Open Application" library="SikuliLibrary">
+<arg>${PATH}/Calculadora.bat</arg>
+<doc>Open application
+ To open app with parameters, refer:
+ https://sikulix-2014.readthedocs.io/en/latest/appclass.html#App.App</doc>
+<status status="PASS" starttime="20220329 13:39:55.861" endtime="20220329 13:39:57.146"/>
+</kw>
+<status status="PASS" starttime="20220329 13:39:53.255" endtime="20220329 13:39:57.147"/>
+</kw>
+<kw name="Quando eu subtraio &quot;5&quot; de &quot;5&quot;" library="sikuli">
+<kw name="Click" library="SikuliLibrary">
+<arg>Number5</arg>
+<doc>Click</doc>
+<msg timestamp="20220329 13:39:58.429" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1648571997569.png'/&gt;
+[log] CLICK on L[615,629]@S(0) (571 msec)</msg>
+<status status="PASS" starttime="20220329 13:39:57.149" endtime="20220329 13:39:58.429"/>
+</kw>
+<kw name="Click" library="SikuliLibrary">
+<arg>Minus</arg>
+<doc>Click</doc>
+<msg timestamp="20220329 13:39:59.422" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1648571998661.png'/&gt;
+[log] CLICK on L[772,628]@S(0) (562 msec)</msg>
+<status status="PASS" starttime="20220329 13:39:58.429" endtime="20220329 13:39:59.422"/>
+</kw>
+<kw name="Click" library="SikuliLibrary">
+<arg>Number5</arg>
+<doc>Click</doc>
+<msg timestamp="20220329 13:40:00.420" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1648571999658.png'/&gt;
+[log] CLICK on L[615,629]@S(0) (553 msec)</msg>
+<status status="PASS" starttime="20220329 13:39:59.422" endtime="20220329 13:40:00.421"/>
+</kw>
+<kw name="Click" library="SikuliLibrary">
+<arg>Equals</arg>
+<doc>Click</doc>
+<msg timestamp="20220329 13:40:01.492" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1648572000685.png'/&gt;
+[log] CLICK on L[773,765]@S(0) (563 msec)</msg>
+<status status="PASS" starttime="20220329 13:40:00.421" endtime="20220329 13:40:01.492"/>
+</kw>
+<status status="PASS" starttime="20220329 13:39:57.149" endtime="20220329 13:40:01.492"/>
+</kw>
+<kw name="Então eu tenho &quot;0&quot; como resultado" library="sikuli">
+<kw name="Wait For Image" library="SikuliLibrary">
+<arg>Assert_B</arg>
+<arg>Assert_A</arg>
+<arg>10</arg>
+<doc>Wait For Image</doc>
+<status status="PASS" starttime="20220329 13:40:01.493" endtime="20220329 13:40:01.947"/>
+</kw>
+<status status="PASS" starttime="20220329 13:40:01.492" endtime="20220329 13:40:01.948"/>
+</kw>
+<kw name="Fechar aplicação" library="sikuli" type="TEARDOWN">
+<kw name="Open Application" library="SikuliLibrary">
+<arg>${PATH}/Close.bat</arg>
+<doc>Open application
+ To open app with parameters, refer:
+ https://sikulix-2014.readthedocs.io/en/latest/appclass.html#App.App</doc>
+<status status="PASS" starttime="20220329 13:40:01.948" endtime="20220329 13:40:03.074"/>
+</kw>
+<kw name="Stop Remote Server" library="SikuliLibrary">
+<doc>Stops the remote server.</doc>
+<msg timestamp="20220329 13:40:03.078" level="INFO">Robot Framework remote server stopping</msg>
+<status status="PASS" starttime="20220329 13:40:03.075" endtime="20220329 13:40:03.078"/>
+</kw>
+<status status="PASS" starttime="20220329 13:40:01.948" endtime="20220329 13:40:03.078"/>
+</kw>
+<status status="PASS" starttime="20220329 13:39:53.254" endtime="20220329 13:40:03.079"/>
+</test>
+<test id="s1-t3" name="Cenário 03 [Multiplicação]">
+<kw name="Dado que eu abro a calculadora" library="sikuli">
+<kw name="Start Sikuli Process" library="SikuliLibrary">
+<msg timestamp="20220329 13:40:03.082" level="INFO">Starting process:
+java -jar C:\Users\Tiago\AppData\Local\Programs\Python\Python310\lib\site-packages\SikuliLibrary\lib\SikuliLibrary.jar 58789 C:\SikuliCalc</msg>
+<msg timestamp="20220329 13:40:03.158" level="INFO">Start sikuli java process on port 58789</msg>
+<msg timestamp="20220329 13:40:04.204" level="INFO">Sikuli java process is started</msg>
+<status status="PASS" starttime="20220329 13:40:03.080" endtime="20220329 13:40:05.709"/>
+</kw>
+<kw name="Add Image Path" library="SikuliLibrary">
+<arg>C:/SikuliCalc/IMG</arg>
+<doc>Add image path</doc>
+<status status="PASS" starttime="20220329 13:40:05.709" endtime="20220329 13:40:05.721"/>
+</kw>
+<kw name="Open Application" library="SikuliLibrary">
+<arg>${PATH}/Calculadora.bat</arg>
+<doc>Open application
+ To open app with parameters, refer:
+ https://sikulix-2014.readthedocs.io/en/latest/appclass.html#App.App</doc>
+<status status="PASS" starttime="20220329 13:40:05.721" endtime="20220329 13:40:07.031"/>
+</kw>
+<status status="PASS" starttime="20220329 13:40:03.080" endtime="20220329 13:40:07.031"/>
+</kw>
+<kw name="Quando eu multiplico &quot;5&quot; por &quot;5&quot;" library="sikuli">
+<kw name="Click" library="SikuliLibrary">
+<arg>Number5</arg>
+<doc>Click</doc>
+<msg timestamp="20220329 13:40:08.201" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1648572007404.png'/&gt;
+[log] CLICK on L[615,629]@S(0) (569 msec)</msg>
+<status status="PASS" starttime="20220329 13:40:07.033" endtime="20220329 13:40:08.201"/>
+</kw>
+<kw name="Click" library="SikuliLibrary">
+<arg>Multi</arg>
+<doc>Click</doc>
+<msg timestamp="20220329 13:40:09.299" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1648572008491.png'/&gt;
+[log] CLICK on L[772,558]@S(0) (565 msec)</msg>
+<status status="PASS" starttime="20220329 13:40:08.201" endtime="20220329 13:40:09.299"/>
+</kw>
+<kw name="Click" library="SikuliLibrary">
+<arg>Number5</arg>
+<doc>Click</doc>
+<msg timestamp="20220329 13:40:10.297" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1648572009533.png'/&gt;
+[log] CLICK on L[615,629]@S(0) (560 msec)</msg>
+<status status="PASS" starttime="20220329 13:40:09.300" endtime="20220329 13:40:10.297"/>
+</kw>
+<kw name="Click" library="SikuliLibrary">
+<arg>Equals</arg>
+<doc>Click</doc>
+<msg timestamp="20220329 13:40:11.361" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1648572010562.png'/&gt;
+[log] CLICK on L[773,765]@S(0) (564 msec)</msg>
+<status status="PASS" starttime="20220329 13:40:10.297" endtime="20220329 13:40:11.361"/>
+</kw>
+<status status="PASS" starttime="20220329 13:40:07.032" endtime="20220329 13:40:11.361"/>
+</kw>
+<kw name="Então eu tenho &quot;25&quot; como resultado" library="sikuli">
+<kw name="Wait For Image" library="SikuliLibrary">
+<arg>Assert_C</arg>
+<arg>Assert_B</arg>
+<arg>10</arg>
+<doc>Wait For Image</doc>
+<status status="PASS" starttime="20220329 13:40:11.364" endtime="20220329 13:40:11.809"/>
+</kw>
+<status status="PASS" starttime="20220329 13:40:11.364" endtime="20220329 13:40:11.809"/>
+</kw>
+<kw name="Fechar aplicação" library="sikuli" type="TEARDOWN">
+<kw name="Open Application" library="SikuliLibrary">
+<arg>${PATH}/Close.bat</arg>
+<doc>Open application
+ To open app with parameters, refer:
+ https://sikulix-2014.readthedocs.io/en/latest/appclass.html#App.App</doc>
+<status status="PASS" starttime="20220329 13:40:11.810" endtime="20220329 13:40:12.934"/>
+</kw>
+<kw name="Stop Remote Server" library="SikuliLibrary">
+<doc>Stops the remote server.</doc>
+<msg timestamp="20220329 13:40:12.938" level="INFO">Robot Framework remote server stopping</msg>
+<status status="PASS" starttime="20220329 13:40:12.934" endtime="20220329 13:40:12.938"/>
+</kw>
+<status status="PASS" starttime="20220329 13:40:11.810" endtime="20220329 13:40:12.938"/>
+</kw>
+<status status="PASS" starttime="20220329 13:40:03.080" endtime="20220329 13:40:12.939"/>
+</test>
+<test id="s1-t4" name="Cenário 04 [Divisão]">
+<kw name="Dado que eu abro a calculadora" library="sikuli">
+<kw name="Start Sikuli Process" library="SikuliLibrary">
+<msg timestamp="20220329 13:40:12.942" level="INFO">Starting process:
+java -jar C:\Users\Tiago\AppData\Local\Programs\Python\Python310\lib\site-packages\SikuliLibrary\lib\SikuliLibrary.jar 58816 C:\SikuliCalc</msg>
+<msg timestamp="20220329 13:40:13.009" level="INFO">Start sikuli java process on port 58816</msg>
+<msg timestamp="20220329 13:40:14.074" level="INFO">Sikuli java process is started</msg>
+<status status="PASS" starttime="20220329 13:40:12.940" endtime="20220329 13:40:15.517"/>
+</kw>
+<kw name="Add Image Path" library="SikuliLibrary">
+<arg>C:/SikuliCalc/IMG</arg>
+<doc>Add image path</doc>
+<status status="PASS" starttime="20220329 13:40:15.517" endtime="20220329 13:40:15.530"/>
+</kw>
+<kw name="Open Application" library="SikuliLibrary">
+<arg>${PATH}/Calculadora.bat</arg>
+<doc>Open application
+ To open app with parameters, refer:
+ https://sikulix-2014.readthedocs.io/en/latest/appclass.html#App.App</doc>
+<status status="PASS" starttime="20220329 13:40:15.530" endtime="20220329 13:40:16.842"/>
+</kw>
+<status status="PASS" starttime="20220329 13:40:12.940" endtime="20220329 13:40:16.843"/>
+</kw>
+<kw name="Quando eu divido &quot;5&quot; por &quot;5&quot;" library="sikuli">
+<kw name="Click" library="SikuliLibrary">
+<arg>Number5</arg>
+<doc>Click</doc>
+<msg timestamp="20220329 13:40:18.010" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1648572017195.png'/&gt;
+[log] CLICK on L[615,629]@S(0) (570 msec)</msg>
+<status status="PASS" starttime="20220329 13:40:16.847" endtime="20220329 13:40:18.010"/>
+</kw>
+<kw name="Click" library="SikuliLibrary">
+<arg>Division</arg>
+<doc>Click</doc>
+<msg timestamp="20220329 13:40:19.117" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1648572018306.png'/&gt;
+[log] CLICK on L[772,490]@S(0) (567 msec)</msg>
+<status status="PASS" starttime="20220329 13:40:18.010" endtime="20220329 13:40:19.117"/>
+</kw>
+<kw name="Click" library="SikuliLibrary">
+<arg>Number5</arg>
+<doc>Click</doc>
+<msg timestamp="20220329 13:40:20.134" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1648572019351.png'/&gt;
+[log] CLICK on L[615,629]@S(0) (567 msec)</msg>
+<status status="PASS" starttime="20220329 13:40:19.117" endtime="20220329 13:40:20.134"/>
+</kw>
+<kw name="Click" library="SikuliLibrary">
+<arg>Equals</arg>
+<doc>Click</doc>
+<msg timestamp="20220329 13:40:21.191" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1648572020383.png'/&gt;
+[log] CLICK on L[773,765]@S(0) (558 msec)</msg>
+<status status="PASS" starttime="20220329 13:40:20.134" endtime="20220329 13:40:21.191"/>
+</kw>
+<status status="PASS" starttime="20220329 13:40:16.846" endtime="20220329 13:40:21.191"/>
+</kw>
+<kw name="Então eu tenho &quot;1&quot; como resultado" library="sikuli">
+<kw name="Wait For Image" library="SikuliLibrary">
+<arg>Assert_D</arg>
+<arg>Assert_B</arg>
+<arg>10</arg>
+<doc>Wait For Image</doc>
+<status status="PASS" starttime="20220329 13:40:21.192" endtime="20220329 13:40:21.640"/>
+</kw>
+<status status="PASS" starttime="20220329 13:40:21.192" endtime="20220329 13:40:21.641"/>
+</kw>
+<kw name="Fechar aplicação" library="sikuli" type="TEARDOWN">
+<kw name="Open Application" library="SikuliLibrary">
+<arg>${PATH}/Close.bat</arg>
+<doc>Open application
+ To open app with parameters, refer:
+ https://sikulix-2014.readthedocs.io/en/latest/appclass.html#App.App</doc>
+<status status="PASS" starttime="20220329 13:40:21.642" endtime="20220329 13:40:22.768"/>
+</kw>
+<kw name="Stop Remote Server" library="SikuliLibrary">
+<doc>Stops the remote server.</doc>
+<msg timestamp="20220329 13:40:22.773" level="INFO">Robot Framework remote server stopping</msg>
+<status status="PASS" starttime="20220329 13:40:22.769" endtime="20220329 13:40:22.773"/>
+</kw>
+<status status="PASS" starttime="20220329 13:40:21.641" endtime="20220329 13:40:22.774"/>
+</kw>
+<status status="PASS" starttime="20220329 13:40:12.940" endtime="20220329 13:40:22.774"/>
+</test>
+<test id="s1-t5" name="Cenário 05 [Soma com números negativos]">
+<kw name="Dado que eu abro a calculadora" library="sikuli">
+<kw name="Start Sikuli Process" library="SikuliLibrary">
+<msg timestamp="20220329 13:40:22.779" level="INFO">Starting process:
+java -jar C:\Users\Tiago\AppData\Local\Programs\Python\Python310\lib\site-packages\SikuliLibrary\lib\SikuliLibrary.jar 58845 C:\SikuliCalc</msg>
+<msg timestamp="20220329 13:40:22.916" level="INFO">Start sikuli java process on port 58845</msg>
+<msg timestamp="20220329 13:40:23.977" level="INFO">Sikuli java process is started</msg>
+<status status="PASS" starttime="20220329 13:40:22.776" endtime="20220329 13:40:25.467"/>
+</kw>
+<kw name="Add Image Path" library="SikuliLibrary">
+<arg>C:/SikuliCalc/IMG</arg>
+<doc>Add image path</doc>
+<status status="PASS" starttime="20220329 13:40:25.467" endtime="20220329 13:40:25.478"/>
+</kw>
+<kw name="Open Application" library="SikuliLibrary">
+<arg>${PATH}/Calculadora.bat</arg>
+<doc>Open application
+ To open app with parameters, refer:
+ https://sikulix-2014.readthedocs.io/en/latest/appclass.html#App.App</doc>
+<status status="PASS" starttime="20220329 13:40:25.478" endtime="20220329 13:40:26.799"/>
+</kw>
+<status status="PASS" starttime="20220329 13:40:22.776" endtime="20220329 13:40:26.799"/>
+</kw>
+<kw name="Quando eu somo &quot;-5&quot; com &quot;-5&quot;" library="sikuli">
+<kw name="Click" library="SikuliLibrary">
+<arg>Number5</arg>
+<doc>Click</doc>
+<msg timestamp="20220329 13:40:27.982" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1648572027188.png'/&gt;
+[log] CLICK on L[615,629]@S(0) (565 msec)</msg>
+<status status="PASS" starttime="20220329 13:40:26.800" endtime="20220329 13:40:27.982"/>
+</kw>
+<kw name="Click" library="SikuliLibrary">
+<arg>Pos-Neg</arg>
+<doc>Click</doc>
+<msg timestamp="20220329 13:40:28.993" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1648572028228.png'/&gt;
+[log] CLICK on L[536,765]@S(0) (555 msec)</msg>
+<status status="PASS" starttime="20220329 13:40:27.982" endtime="20220329 13:40:28.993"/>
+</kw>
+<kw name="Click" library="SikuliLibrary">
+<arg>Plus</arg>
+<doc>Click</doc>
+<msg timestamp="20220329 13:40:30.096" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1648572029287.png'/&gt;
+[log] CLICK on L[773,696]@S(0) (563 msec)</msg>
+<status status="PASS" starttime="20220329 13:40:28.994" endtime="20220329 13:40:30.096"/>
+</kw>
+<kw name="Click" library="SikuliLibrary">
+<arg>Number5</arg>
+<doc>Click</doc>
+<msg timestamp="20220329 13:40:31.061" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1648572030329.png'/&gt;
+[log] CLICK on L[615,629]@S(0) (550 msec)</msg>
+<status status="PASS" starttime="20220329 13:40:30.096" endtime="20220329 13:40:31.061"/>
+</kw>
+<kw name="Click" library="SikuliLibrary">
+<arg>Pos-Neg</arg>
+<doc>Click</doc>
+<msg timestamp="20220329 13:40:32.058" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1648572031311.png'/&gt;
+[log] CLICK on L[536,765]@S(0) (558 msec)</msg>
+<status status="PASS" starttime="20220329 13:40:31.061" endtime="20220329 13:40:32.058"/>
+</kw>
+<kw name="Click" library="SikuliLibrary">
+<arg>Equals</arg>
+<doc>Click</doc>
+<msg timestamp="20220329 13:40:33.117" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1648572032321.png'/&gt;
+[log] CLICK on L[773,765]@S(0) (568 msec)</msg>
+<status status="PASS" starttime="20220329 13:40:32.058" endtime="20220329 13:40:33.117"/>
+</kw>
+<status status="PASS" starttime="20220329 13:40:26.800" endtime="20220329 13:40:33.117"/>
+</kw>
+<kw name="Então eu tenho &quot;-10&quot; como resultado" library="sikuli">
+<kw name="Wait For Image" library="SikuliLibrary">
+<arg>Assert_E</arg>
+<arg>Assert_A</arg>
+<arg>10</arg>
+<doc>Wait For Image</doc>
+<status status="PASS" starttime="20220329 13:40:33.118" endtime="20220329 13:40:33.613"/>
+</kw>
+<status status="PASS" starttime="20220329 13:40:33.118" endtime="20220329 13:40:33.613"/>
+</kw>
+<kw name="Fechar aplicação" library="sikuli" type="TEARDOWN">
+<kw name="Open Application" library="SikuliLibrary">
+<arg>${PATH}/Close.bat</arg>
+<doc>Open application
+ To open app with parameters, refer:
+ https://sikulix-2014.readthedocs.io/en/latest/appclass.html#App.App</doc>
+<status status="PASS" starttime="20220329 13:40:33.614" endtime="20220329 13:40:34.747"/>
+</kw>
+<kw name="Stop Remote Server" library="SikuliLibrary">
+<doc>Stops the remote server.</doc>
+<msg timestamp="20220329 13:40:34.750" level="INFO">Robot Framework remote server stopping</msg>
+<status status="PASS" starttime="20220329 13:40:34.747" endtime="20220329 13:40:34.750"/>
+</kw>
+<status status="PASS" starttime="20220329 13:40:33.614" endtime="20220329 13:40:34.751"/>
+</kw>
+<status status="PASS" starttime="20220329 13:40:22.775" endtime="20220329 13:40:34.751"/>
+</test>
+<test id="s1-t6" name="Cenário 06 [Soma de um número positivo com um número negativo]">
+<kw name="Dado que eu abro a calculadora" library="sikuli">
+<kw name="Start Sikuli Process" library="SikuliLibrary">
+<msg timestamp="20220329 13:40:34.755" level="INFO">Starting process:
+java -jar C:\Users\Tiago\AppData\Local\Programs\Python\Python310\lib\site-packages\SikuliLibrary\lib\SikuliLibrary.jar 58881 C:\SikuliCalc</msg>
+<msg timestamp="20220329 13:40:34.828" level="INFO">Start sikuli java process on port 58881</msg>
+<msg timestamp="20220329 13:40:35.898" level="INFO">Sikuli java process is started</msg>
+<status status="PASS" starttime="20220329 13:40:34.753" endtime="20220329 13:40:37.336"/>
+</kw>
+<kw name="Add Image Path" library="SikuliLibrary">
+<arg>C:/SikuliCalc/IMG</arg>
+<doc>Add image path</doc>
+<status status="PASS" starttime="20220329 13:40:37.337" endtime="20220329 13:40:37.353"/>
+</kw>
+<kw name="Open Application" library="SikuliLibrary">
+<arg>${PATH}/Calculadora.bat</arg>
+<doc>Open application
+ To open app with parameters, refer:
+ https://sikulix-2014.readthedocs.io/en/latest/appclass.html#App.App</doc>
+<status status="PASS" starttime="20220329 13:40:37.353" endtime="20220329 13:40:38.658"/>
+</kw>
+<status status="PASS" starttime="20220329 13:40:34.753" endtime="20220329 13:40:38.658"/>
+</kw>
+<kw name="Quando eu somo &quot;5&quot; com &quot;-5&quot;" library="sikuli">
+<kw name="Click" library="SikuliLibrary">
+<arg>Number5</arg>
+<doc>Click</doc>
+<msg timestamp="20220329 13:40:39.802" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1648572039021.png'/&gt;
+[log] CLICK on L[615,629]@S(0) (558 msec)</msg>
+<status status="PASS" starttime="20220329 13:40:38.659" endtime="20220329 13:40:39.802"/>
+</kw>
+<kw name="Click" library="SikuliLibrary">
+<arg>Plus</arg>
+<doc>Click</doc>
+<msg timestamp="20220329 13:40:40.922" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1648572040096.png'/&gt;
+[log] CLICK on L[773,696]@S(0) (562 msec)</msg>
+<status status="PASS" starttime="20220329 13:40:39.802" endtime="20220329 13:40:40.922"/>
+</kw>
+<kw name="Click" library="SikuliLibrary">
+<arg>Number5</arg>
+<doc>Click</doc>
+<msg timestamp="20220329 13:40:41.940" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1648572041158.png'/&gt;
+[log] CLICK on L[615,629]@S(0) (568 msec)</msg>
+<status status="PASS" starttime="20220329 13:40:40.922" endtime="20220329 13:40:41.940"/>
+</kw>
+<kw name="Click" library="SikuliLibrary">
+<arg>Pos-Neg</arg>
+<doc>Click</doc>
+<msg timestamp="20220329 13:40:42.934" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1648572042170.png'/&gt;
+[log] CLICK on L[536,765]@S(0) (565 msec)</msg>
+<status status="PASS" starttime="20220329 13:40:41.940" endtime="20220329 13:40:42.934"/>
+</kw>
+<kw name="Click" library="SikuliLibrary">
+<arg>Equals</arg>
+<doc>Click</doc>
+<msg timestamp="20220329 13:40:44.028" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1648572043213.png'/&gt;
+[log] CLICK on L[773,765]@S(0) (557 msec)</msg>
+<status status="PASS" starttime="20220329 13:40:42.935" endtime="20220329 13:40:44.028"/>
+</kw>
+<status status="PASS" starttime="20220329 13:40:38.659" endtime="20220329 13:40:44.028"/>
+</kw>
+<kw name="Então eu tenho &quot;0&quot; como resultado" library="sikuli">
+<kw name="Wait For Image" library="SikuliLibrary">
+<arg>Assert_B</arg>
+<arg>Assert_A</arg>
+<arg>10</arg>
+<doc>Wait For Image</doc>
+<status status="PASS" starttime="20220329 13:40:44.029" endtime="20220329 13:40:44.475"/>
+</kw>
+<status status="PASS" starttime="20220329 13:40:44.029" endtime="20220329 13:40:44.475"/>
+</kw>
+<kw name="Fechar aplicação" library="sikuli" type="TEARDOWN">
+<kw name="Open Application" library="SikuliLibrary">
+<arg>${PATH}/Close.bat</arg>
+<doc>Open application
+ To open app with parameters, refer:
+ https://sikulix-2014.readthedocs.io/en/latest/appclass.html#App.App</doc>
+<status status="PASS" starttime="20220329 13:40:44.476" endtime="20220329 13:40:45.619"/>
+</kw>
+<kw name="Stop Remote Server" library="SikuliLibrary">
+<doc>Stops the remote server.</doc>
+<msg timestamp="20220329 13:40:45.623" level="INFO">Robot Framework remote server stopping</msg>
+<status status="PASS" starttime="20220329 13:40:45.620" endtime="20220329 13:40:45.623"/>
+</kw>
+<status status="PASS" starttime="20220329 13:40:44.476" endtime="20220329 13:40:45.623"/>
+</kw>
+<status status="PASS" starttime="20220329 13:40:34.752" endtime="20220329 13:40:45.624"/>
+</test>
+<test id="s1-t7" name="Cenário 07 [Soma com zero]">
+<kw name="Dado que eu abro a calculadora" library="sikuli">
+<kw name="Start Sikuli Process" library="SikuliLibrary">
+<msg timestamp="20220329 13:40:45.628" level="INFO">Starting process:
+java -jar C:\Users\Tiago\AppData\Local\Programs\Python\Python310\lib\site-packages\SikuliLibrary\lib\SikuliLibrary.jar 58918 C:\SikuliCalc</msg>
+<msg timestamp="20220329 13:40:45.709" level="INFO">Start sikuli java process on port 58918</msg>
+<msg timestamp="20220329 13:40:46.766" level="INFO">Sikuli java process is started</msg>
+<status status="PASS" starttime="20220329 13:40:45.626" endtime="20220329 13:40:48.206"/>
+</kw>
+<kw name="Add Image Path" library="SikuliLibrary">
+<arg>C:/SikuliCalc/IMG</arg>
+<doc>Add image path</doc>
+<status status="PASS" starttime="20220329 13:40:48.206" endtime="20220329 13:40:48.219"/>
+</kw>
+<kw name="Open Application" library="SikuliLibrary">
+<arg>${PATH}/Calculadora.bat</arg>
+<doc>Open application
+ To open app with parameters, refer:
+ https://sikulix-2014.readthedocs.io/en/latest/appclass.html#App.App</doc>
+<status status="PASS" starttime="20220329 13:40:48.219" endtime="20220329 13:40:49.523"/>
+</kw>
+<status status="PASS" starttime="20220329 13:40:45.626" endtime="20220329 13:40:49.523"/>
+</kw>
+<kw name="Quando eu somo &quot;5&quot; com &quot;0&quot;" library="sikuli">
+<kw name="Click" library="SikuliLibrary">
+<arg>Number5</arg>
+<doc>Click</doc>
+<msg timestamp="20220329 13:40:50.705" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1648572049895.png'/&gt;
+[log] CLICK on L[615,629]@S(0) (572 msec)</msg>
+<status status="PASS" starttime="20220329 13:40:49.525" endtime="20220329 13:40:50.706"/>
+</kw>
+<kw name="Click" library="SikuliLibrary">
+<arg>Plus</arg>
+<doc>Click</doc>
+<msg timestamp="20220329 13:40:51.796" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1648572050985.png'/&gt;
+[log] CLICK on L[773,696]@S(0) (561 msec)</msg>
+<status status="PASS" starttime="20220329 13:40:50.706" endtime="20220329 13:40:51.796"/>
+</kw>
+<kw name="Click" library="SikuliLibrary">
+<arg>Number0</arg>
+<doc>Click</doc>
+<msg timestamp="20220329 13:40:52.903" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1648572052093.png'/&gt;
+[log] CLICK on L[614,765]@S(0) (560 msec)</msg>
+<status status="PASS" starttime="20220329 13:40:51.796" endtime="20220329 13:40:52.903"/>
+</kw>
+<kw name="Click" library="SikuliLibrary">
+<arg>Equals</arg>
+<doc>Click</doc>
+<msg timestamp="20220329 13:40:53.965" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1648572053168.png'/&gt;
+[log] CLICK on L[773,765]@S(0) (557 msec)</msg>
+<status status="PASS" starttime="20220329 13:40:52.903" endtime="20220329 13:40:53.965"/>
+</kw>
+<status status="PASS" starttime="20220329 13:40:49.524" endtime="20220329 13:40:53.965"/>
+</kw>
+<kw name="Então eu tenho &quot;5&quot; como resultado" library="sikuli">
+<kw name="Wait For Image" library="SikuliLibrary">
+<arg>Assert_F</arg>
+<arg>Assert_A</arg>
+<arg>10</arg>
+<doc>Wait For Image</doc>
+<status status="PASS" starttime="20220329 13:40:53.966" endtime="20220329 13:40:54.397"/>
+</kw>
+<status status="PASS" starttime="20220329 13:40:53.966" endtime="20220329 13:40:54.398"/>
+</kw>
+<kw name="Fechar aplicação" library="sikuli" type="TEARDOWN">
+<kw name="Open Application" library="SikuliLibrary">
+<arg>${PATH}/Close.bat</arg>
+<doc>Open application
+ To open app with parameters, refer:
+ https://sikulix-2014.readthedocs.io/en/latest/appclass.html#App.App</doc>
+<status status="PASS" starttime="20220329 13:40:54.399" endtime="20220329 13:40:55.530"/>
+</kw>
+<kw name="Stop Remote Server" library="SikuliLibrary">
+<doc>Stops the remote server.</doc>
+<msg timestamp="20220329 13:40:55.533" level="INFO">Robot Framework remote server stopping</msg>
+<status status="PASS" starttime="20220329 13:40:55.530" endtime="20220329 13:40:55.534"/>
+</kw>
+<status status="PASS" starttime="20220329 13:40:54.398" endtime="20220329 13:40:55.534"/>
+</kw>
+<status status="PASS" starttime="20220329 13:40:45.625" endtime="20220329 13:40:55.534"/>
+</test>
+<test id="s1-t8" name="Cenário 08 [Soma de dois zeros]">
+<kw name="Dado que eu abro a calculadora" library="sikuli">
+<kw name="Start Sikuli Process" library="SikuliLibrary">
+<msg timestamp="20220329 13:40:55.539" level="INFO">Starting process:
+java -jar C:\Users\Tiago\AppData\Local\Programs\Python\Python310\lib\site-packages\SikuliLibrary\lib\SikuliLibrary.jar 58947 C:\SikuliCalc</msg>
+<msg timestamp="20220329 13:40:55.615" level="INFO">Start sikuli java process on port 58947</msg>
+<msg timestamp="20220329 13:40:56.672" level="INFO">Sikuli java process is started</msg>
+<status status="PASS" starttime="20220329 13:40:55.537" endtime="20220329 13:40:58.125"/>
+</kw>
+<kw name="Add Image Path" library="SikuliLibrary">
+<arg>C:/SikuliCalc/IMG</arg>
+<doc>Add image path</doc>
+<status status="PASS" starttime="20220329 13:40:58.125" endtime="20220329 13:40:58.138"/>
+</kw>
+<kw name="Open Application" library="SikuliLibrary">
+<arg>${PATH}/Calculadora.bat</arg>
+<doc>Open application
+ To open app with parameters, refer:
+ https://sikulix-2014.readthedocs.io/en/latest/appclass.html#App.App</doc>
+<status status="PASS" starttime="20220329 13:40:58.139" endtime="20220329 13:40:59.449"/>
+</kw>
+<status status="PASS" starttime="20220329 13:40:55.536" endtime="20220329 13:40:59.449"/>
+</kw>
+<kw name="Quando eu somo &quot;0&quot; com &quot;0&quot;" library="sikuli">
+<kw name="Click" library="SikuliLibrary">
+<arg>Number0</arg>
+<doc>Click</doc>
+<msg timestamp="20220329 13:41:01.018" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1648572060157.png'/&gt;
+[log] CLICK on L[614,765]@S(0) (573 msec)</msg>
+<status status="PASS" starttime="20220329 13:40:59.450" endtime="20220329 13:41:01.018"/>
+</kw>
+<kw name="Click" library="SikuliLibrary">
+<arg>Plus</arg>
+<doc>Click</doc>
+<msg timestamp="20220329 13:41:02.103" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1648572061282.png'/&gt;
+[log] CLICK on L[773,696]@S(0) (558 msec)</msg>
+<status status="PASS" starttime="20220329 13:41:01.019" endtime="20220329 13:41:02.103"/>
+</kw>
+<kw name="Click" library="SikuliLibrary">
+<arg>Number0</arg>
+<doc>Click</doc>
+<msg timestamp="20220329 13:41:03.222" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1648572062398.png'/&gt;
+[log] CLICK on L[614,765]@S(0) (561 msec)</msg>
+<status status="PASS" starttime="20220329 13:41:02.103" endtime="20220329 13:41:03.222"/>
+</kw>
+<kw name="Click" library="SikuliLibrary">
+<arg>Equals</arg>
+<doc>Click</doc>
+<msg timestamp="20220329 13:41:04.282" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1648572063490.png'/&gt;
+[log] CLICK on L[773,765]@S(0) (564 msec)</msg>
+<status status="PASS" starttime="20220329 13:41:03.222" endtime="20220329 13:41:04.282"/>
+</kw>
+<status status="PASS" starttime="20220329 13:40:59.450" endtime="20220329 13:41:04.283"/>
+</kw>
+<kw name="Então eu tenho &quot;0&quot; como resultado" library="sikuli">
+<kw name="Wait For Image" library="SikuliLibrary">
+<arg>Assert_B</arg>
+<arg>Assert_A</arg>
+<arg>10</arg>
+<doc>Wait For Image</doc>
+<status status="PASS" starttime="20220329 13:41:04.284" endtime="20220329 13:41:04.721"/>
+</kw>
+<status status="PASS" starttime="20220329 13:41:04.283" endtime="20220329 13:41:04.721"/>
+</kw>
+<kw name="Fechar aplicação" library="sikuli" type="TEARDOWN">
+<kw name="Open Application" library="SikuliLibrary">
+<arg>${PATH}/Close.bat</arg>
+<doc>Open application
+ To open app with parameters, refer:
+ https://sikulix-2014.readthedocs.io/en/latest/appclass.html#App.App</doc>
+<status status="PASS" starttime="20220329 13:41:04.722" endtime="20220329 13:41:05.843"/>
+</kw>
+<kw name="Stop Remote Server" library="SikuliLibrary">
+<doc>Stops the remote server.</doc>
+<msg timestamp="20220329 13:41:05.847" level="INFO">Robot Framework remote server stopping</msg>
+<status status="PASS" starttime="20220329 13:41:05.843" endtime="20220329 13:41:05.847"/>
+</kw>
+<status status="PASS" starttime="20220329 13:41:04.722" endtime="20220329 13:41:05.847"/>
+</kw>
+<status status="PASS" starttime="20220329 13:40:55.536" endtime="20220329 13:41:05.848"/>
+</test>
+<test id="s1-t9" name="Cenário 09 [Divisão de um número negativo por um número negativo]">
+<kw name="Dado que eu abro a calculadora" library="sikuli">
+<kw name="Start Sikuli Process" library="SikuliLibrary">
+<msg timestamp="20220329 13:41:05.852" level="INFO">Starting process:
+java -jar C:\Users\Tiago\AppData\Local\Programs\Python\Python310\lib\site-packages\SikuliLibrary\lib\SikuliLibrary.jar 58978 C:\SikuliCalc</msg>
+<msg timestamp="20220329 13:41:05.932" level="INFO">Start sikuli java process on port 58978</msg>
+<msg timestamp="20220329 13:41:06.994" level="INFO">Sikuli java process is started</msg>
+<status status="PASS" starttime="20220329 13:41:05.850" endtime="20220329 13:41:08.447"/>
+</kw>
+<kw name="Add Image Path" library="SikuliLibrary">
+<arg>C:/SikuliCalc/IMG</arg>
+<doc>Add image path</doc>
+<status status="PASS" starttime="20220329 13:41:08.447" endtime="20220329 13:41:08.460"/>
+</kw>
+<kw name="Open Application" library="SikuliLibrary">
+<arg>${PATH}/Calculadora.bat</arg>
+<doc>Open application
+ To open app with parameters, refer:
+ https://sikulix-2014.readthedocs.io/en/latest/appclass.html#App.App</doc>
+<status status="PASS" starttime="20220329 13:41:08.461" endtime="20220329 13:41:09.755"/>
+</kw>
+<status status="PASS" starttime="20220329 13:41:05.849" endtime="20220329 13:41:09.756"/>
+</kw>
+<kw name="Quando eu divido &quot;-5&quot; por &quot;-5&quot;" library="sikuli">
+<kw name="Click" library="SikuliLibrary">
+<arg>Number5</arg>
+<doc>Click</doc>
+<msg timestamp="20220329 13:41:11.205" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1648572070439.png'/&gt;
+[log] CLICK on L[615,629]@S(0) (564 msec)</msg>
+<status status="PASS" starttime="20220329 13:41:09.757" endtime="20220329 13:41:11.205"/>
+</kw>
+<kw name="Click" library="SikuliLibrary">
+<arg>Pos-Neg</arg>
+<doc>Click</doc>
+<msg timestamp="20220329 13:41:12.200" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1648572071421.png'/&gt;
+[log] CLICK on L[536,765]@S(0) (566 msec)</msg>
+<status status="PASS" starttime="20220329 13:41:11.205" endtime="20220329 13:41:12.201"/>
+</kw>
+<kw name="Click" library="SikuliLibrary">
+<arg>Division</arg>
+<doc>Click</doc>
+<msg timestamp="20220329 13:41:13.279" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1648572072465.png'/&gt;
+[log] CLICK on L[772,490]@S(0) (559 msec)</msg>
+<status status="PASS" starttime="20220329 13:41:12.201" endtime="20220329 13:41:13.279"/>
+</kw>
+<kw name="Click" library="SikuliLibrary">
+<arg>Number5</arg>
+<doc>Click</doc>
+<msg timestamp="20220329 13:41:14.276" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1648572073511.png'/&gt;
+[log] CLICK on L[615,629]@S(0) (566 msec)</msg>
+<status status="PASS" starttime="20220329 13:41:13.279" endtime="20220329 13:41:14.276"/>
+</kw>
+<kw name="Click" library="SikuliLibrary">
+<arg>Pos-Neg</arg>
+<doc>Click</doc>
+<msg timestamp="20220329 13:41:15.292" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1648572074494.png'/&gt;
+[log] CLICK on L[536,765]@S(0) (566 msec)</msg>
+<status status="PASS" starttime="20220329 13:41:14.276" endtime="20220329 13:41:15.292"/>
+</kw>
+<kw name="Click" library="SikuliLibrary">
+<arg>Equals</arg>
+<doc>Click</doc>
+<msg timestamp="20220329 13:41:16.347" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1648572075538.png'/&gt;
+[log] CLICK on L[773,765]@S(0) (566 msec)</msg>
+<status status="PASS" starttime="20220329 13:41:15.293" endtime="20220329 13:41:16.347"/>
+</kw>
+<status status="PASS" starttime="20220329 13:41:09.756" endtime="20220329 13:41:16.347"/>
+</kw>
+<kw name="Então eu tenho &quot;-1&quot; como resultado" library="sikuli">
+<kw name="Wait For Image" library="SikuliLibrary">
+<arg>Assert_G</arg>
+<arg>Assert_D</arg>
+<arg>10</arg>
+<doc>Wait For Image</doc>
+<status status="PASS" starttime="20220329 13:41:16.348" endtime="20220329 13:41:16.788"/>
+</kw>
+<status status="PASS" starttime="20220329 13:41:16.348" endtime="20220329 13:41:16.788"/>
+</kw>
+<kw name="Fechar aplicação" library="sikuli" type="TEARDOWN">
+<kw name="Open Application" library="SikuliLibrary">
+<arg>${PATH}/Close.bat</arg>
+<doc>Open application
+ To open app with parameters, refer:
+ https://sikulix-2014.readthedocs.io/en/latest/appclass.html#App.App</doc>
+<status status="PASS" starttime="20220329 13:41:16.789" endtime="20220329 13:41:17.924"/>
+</kw>
+<kw name="Stop Remote Server" library="SikuliLibrary">
+<doc>Stops the remote server.</doc>
+<msg timestamp="20220329 13:41:17.927" level="INFO">Robot Framework remote server stopping</msg>
+<status status="PASS" starttime="20220329 13:41:17.925" endtime="20220329 13:41:17.927"/>
+</kw>
+<status status="PASS" starttime="20220329 13:41:16.788" endtime="20220329 13:41:17.928"/>
+</kw>
+<status status="PASS" starttime="20220329 13:41:05.849" endtime="20220329 13:41:17.928"/>
+</test>
+<test id="s1-t10" name="Cenário 10 [Divisão de zero por qualquer número]">
+<kw name="Dado que eu abro a calculadora" library="sikuli">
+<kw name="Start Sikuli Process" library="SikuliLibrary">
+<msg timestamp="20220329 13:41:17.932" level="INFO">Starting process:
+java -jar C:\Users\Tiago\AppData\Local\Programs\Python\Python310\lib\site-packages\SikuliLibrary\lib\SikuliLibrary.jar 59012 C:\SikuliCalc</msg>
+<msg timestamp="20220329 13:41:18.013" level="INFO">Start sikuli java process on port 59012</msg>
+<msg timestamp="20220329 13:41:19.068" level="INFO">Sikuli java process is started</msg>
+<status status="PASS" starttime="20220329 13:41:17.930" endtime="20220329 13:41:20.534"/>
+</kw>
+<kw name="Add Image Path" library="SikuliLibrary">
+<arg>C:/SikuliCalc/IMG</arg>
+<doc>Add image path</doc>
+<status status="PASS" starttime="20220329 13:41:20.535" endtime="20220329 13:41:20.548"/>
+</kw>
+<kw name="Open Application" library="SikuliLibrary">
+<arg>${PATH}/Calculadora.bat</arg>
+<doc>Open application
+ To open app with parameters, refer:
+ https://sikulix-2014.readthedocs.io/en/latest/appclass.html#App.App</doc>
+<status status="PASS" starttime="20220329 13:41:20.548" endtime="20220329 13:41:21.857"/>
+</kw>
+<status status="PASS" starttime="20220329 13:41:17.930" endtime="20220329 13:41:21.859"/>
+</kw>
+<kw name="Quando eu divido &quot;0&quot; por &quot;5&quot;" library="sikuli">
+<kw name="Click" library="SikuliLibrary">
+<arg>Number0</arg>
+<doc>Click</doc>
+<msg timestamp="20220329 13:41:23.396" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1648572082585.png'/&gt;
+[log] CLICK on L[614,765]@S(0) (553 msec)</msg>
+<status status="PASS" starttime="20220329 13:41:21.861" endtime="20220329 13:41:23.396"/>
+</kw>
+<kw name="Click" library="SikuliLibrary">
+<arg>Division</arg>
+<doc>Click</doc>
+<msg timestamp="20220329 13:41:24.470" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1648572083656.png'/&gt;
+[log] CLICK on L[772,490]@S(0) (561 msec)</msg>
+<status status="PASS" starttime="20220329 13:41:23.396" endtime="20220329 13:41:24.470"/>
+</kw>
+<kw name="Click" library="SikuliLibrary">
+<arg>Number5</arg>
+<doc>Click</doc>
+<msg timestamp="20220329 13:41:25.462" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1648572084687.png'/&gt;
+[log] CLICK on L[615,629]@S(0) (558 msec)</msg>
+<status status="PASS" starttime="20220329 13:41:24.470" endtime="20220329 13:41:25.462"/>
+</kw>
+<kw name="Click" library="SikuliLibrary">
+<arg>Equals</arg>
+<doc>Click</doc>
+<msg timestamp="20220329 13:41:26.522" level="INFO" html="true">&lt;img src='sikuli_captured/sikuliximage-1648572085727.png'/&gt;
+[log] CLICK on L[773,765]@S(0) (560 msec)</msg>
+<status status="PASS" starttime="20220329 13:41:25.462" endtime="20220329 13:41:26.522"/>
+</kw>
+<status status="PASS" starttime="20220329 13:41:21.861" endtime="20220329 13:41:26.523"/>
+</kw>
+<kw name="Então eu tenho &quot;0&quot; como resultado" library="sikuli">
+<kw name="Wait For Image" library="SikuliLibrary">
+<arg>Assert_B</arg>
+<arg>Assert_A</arg>
+<arg>10</arg>
+<doc>Wait For Image</doc>
+<status status="PASS" starttime="20220329 13:41:26.523" endtime="20220329 13:41:26.980"/>
+</kw>
+<status status="PASS" starttime="20220329 13:41:26.523" endtime="20220329 13:41:26.980"/>
+</kw>
+<kw name="Fechar aplicação" library="sikuli" type="TEARDOWN">
+<kw name="Open Application" library="SikuliLibrary">
+<arg>${PATH}/Close.bat</arg>
+<doc>Open application
+ To open app with parameters, refer:
+ https://sikulix-2014.readthedocs.io/en/latest/appclass.html#App.App</doc>
+<status status="PASS" starttime="20220329 13:41:26.981" endtime="20220329 13:41:28.117"/>
+</kw>
+<kw name="Stop Remote Server" library="SikuliLibrary">
+<doc>Stops the remote server.</doc>
+<msg timestamp="20220329 13:41:28.121" level="INFO">Robot Framework remote server stopping</msg>
+<status status="PASS" starttime="20220329 13:41:28.117" endtime="20220329 13:41:28.121"/>
+</kw>
+<status status="PASS" starttime="20220329 13:41:26.980" endtime="20220329 13:41:28.121"/>
+</kw>
+<status status="PASS" starttime="20220329 13:41:17.929" endtime="20220329 13:41:28.122"/>
+</test>
+<status status="PASS" starttime="20220329 13:39:43.129" endtime="20220329 13:41:28.123"/>
+</suite>
+<statistics>
+<total>
+<stat pass="10" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="10" fail="0" skip="0" id="s1" name="Sikuli">Sikuli</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
